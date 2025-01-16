@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="dm-beauty-logo-06.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <nav class="Beauty">
+        <img src="logo.png" alt="Beauty">
+    </nav>
+    <div class="separation"></div>
+    <nav class="navigation">
+        <a href="#" class="logo">
+            <img src="dm-beauty-logo-06.png" alt="Beauty App">
+        </a>
+        <form class="search-box">
+            <input type="text" placeholder="Search Product Here" required>
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div class="nav-btns">
+            <a href="login.html" class="nav-user">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="cart.html" class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i> <div id="cart">
+                    <span>:- </span><span id="cart-count">0</span>
+                </div> 
+             </a>
+        </div>
+        
+    </nav>
+    <section id="main">
+     <div class="main-text">
+        <span>New Collection</span>
+        <h1>Ecommerce<font>Beauty Products Website</font></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque sed suscipit molestias non amet delectus optio, vel soluta omnis, rerum recusandae cumque. Sit adipisci inventore veniam nostrum dolor dolore!</p>
+    <a href="products.html">Shop Now</a>
+</div>
+    <div class="main-imgs">
+        <img src="main.png" alt="Beauty">
+    </div>
+    </section>
+    <section class="product-grid-3">
+        <div class="product-grid-box product-grid-box1">
+            <img src="s1.jpg" alt="Beauty">
+            <div class="product-grid-text">
+                <strong>Natural Green Lotion</strong>
+                <span>Skin Care Product</span>
+                <button class="add-to-cart" data-id="6" data-name="Natural Green Lotion" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-grid-box product-grid-box2">
+            <img src="s2.jpg" alt="Beauty">
+            <div class="product-grid-text">
+                <strong>Natural Green Lotion</strong>
+                <span>Skin Care Product</span>
+                <button class="add-to-cart" data-id="6" data-name="Natural Green Lotion" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-grid-box product-grid-box3">
+            <img src="s3.jpg" alt="Beauty">
+            <div class="product-grid-text">
+                <strong>Natural Green Lotion</strong>
+                <span>Skin Care Product</span>
+                <button class="add-to-cart" data-id="6" data-name="Natural Green Lotion" data-price="25">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+    <div class="separation"></div>
+    <section id="new_products">
+        <div class="new-p-heading">
+            <h3>
+                New Products
+            </h3>
+            <ul>
+                <li class="active" data-filter="all">All</li>
+                <li class="active" data-filter="skin">Skin</li>
+                <li class="active" data-filter="makeup">Makeup</li>
+                <li class="active" data-filter="nails">Nail's</li>
+            </ul>
+        </div>
+        <div class="new-product-container">
+            <div class="new-product-box skin">
+                <a href="product_page - Copy (2).html" class="new-product-img">
+                    <img src="n1.png" alt="Beauty">
+                    <span>Skin Care</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy (2).html" class="new-product-title">FaceWash for Women</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="FaceWash for Women" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="new-product-box skin">
+                <a href="product_page - Copy (3).html" class="new-product-img">
+                    <img src="n2.png" alt="Beauty">
+                    <span>Skin Care</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy (3).html" class="new-product-title">FaceWash for Women</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="FaceWash for Women" data-price="25">Add to Cart</button>
+
+            </div><div class="new-product-box nails">
+                <a href="product_page - Copy.html" class="new-product-img">
+                    <img src="n3.png" alt="Beauty">
+                    <span>Nails</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy.html" class="new-product-title">Artificial colourful Nails</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Artificial colourful Nails" data-price="25">Add to Cart</button>
+
+            </div><div class="new-product-box nails">
+                <a href="product_page - Copy (4).html" class="new-product-img">
+                    <img src="n4.png" alt="Beauty">
+                    <span>Nails</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy (4).html" class="new-product-title">Nail Polish</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Nail Polish Remover" data-price="25">Add to Cart</button>
+
+            </div><div class="new-product-box makeup">
+                <a href="product_page.html" class="new-product-img">
+                    <img src="n5.png" alt="Beauty">
+                    <span>Makeup</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page.html" class="new-product-title">Eyelashes for Makeup</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Eyelashes for Makeup" data-price="25">Add to Cart</button>
+
+            </div><div class="new-product-box nails">
+                <a href="product_page - Copy (5).html" class="new-product-img">
+                    <img src="n6.png" alt="Beauty">
+                    <span>Nails</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy (5).html" class="new-product-title">NailPolishes of different Colours</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="NailPolishes of different Colours" data-price="25">Add to Cart</button>
+
+            </div><div class="new-product-box makeup">
+                <a href="product_page - Copy (6).html" class="new-product-img">
+                    <img src="n7.png" alt="Beauty">
+                    <span>Makeup</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy (6).html" class="new-product-title">Different Colours of Lipsticks</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Different Colours of Lipsticks" data-price="25">Add to Cart</button>
+
+            </div><div class="new-product-box skin">
+                <a href="product_page - Copy (7).html" class="new-product-img">
+                    <img src="n8.png" alt="Beauty">
+                    <span>Skin Care</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy (7).html" class="new-product-title">FaceWash for Women</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="FaceWash for Women" data-price="25">Add to Cart</button>
+
+            </div><div class="new-product-box skin">
+                <a href="product_page - Copy (8).html" class="new-product-img">
+                    <img src="n9.png" alt="Beauty">
+                    <span>Skin Care</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy (8).html" class="new-product-title">Cleanser for Face and Hands</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Cleanser for Face and Hands" data-price="25">Add to Cart</button>
+
+            </div><div class="new-product-box makeup">
+                <a href="product_page - Copy (9).html" class="new-product-img">
+                    <img src="n10.png" alt="Beauty">
+                    <span>Makeup</span>
+                </a>
+                <div class="new-product-text">
+                    <a href="product_page - Copy (9).html" class="new-product-title">Face Powder for Makeup</a>
+                    <span>20$</span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Face Powder for Makeup" data-price="25">Add to Cart</button>
+
+        </div>
+    </section>
+    <section class="product-grid-half">
+        <div class="product-grid-box product-grid-box1">
+            <img src="h1.jpg" alt="Beauty">
+            <div class="product-grid-text">
+                <strong>MakeUp Kit </strong>
+                <span>Makeup Product</span>
+                <button class="add-to-cart" data-id="6" data-name="MakeUp Kit" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-grid-box product-grid-box2">
+            <img src="s2.jpg" alt="Beauty">
+            <div class="product-grid-text">
+                <strong>Natural Green Lotion</strong>
+                <span>Skin Care Product</span>
+                <button class="add-to-cart" data-id="6" data-name="Natural Green Lotion" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-grid-box product-grid-box3">
+            <img src="s3.jpg" alt="Beauty">
+            <div class="product-grid-text">
+                <strong>Natural Green Lotion</strong>
+                <span>Skin Care Product</span>
+                <button class="add-to-cart" data-id="6" data-name="Natural Green Lotion" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <div class="separation"></div>
+    <section id="popular-products">
+        <div class="popular-heading">
+            <h3>Popular Products</h3>
+            <a href="#">All</a>
+        </div>
+        <div class="popular-container">
+            <div class="popular-box">
+                <a href="product_page - Copy (2).html"class="popular-box-img">
+                    <img src="n1.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (2).html">FaceWash For Women</a>
+                    <span class="p-category">Face Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="FaceWash For Women" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy (3).html"class="popular-box-img">
+                    <img src="n2.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (3).html">FaceWash For Women</a>
+                    <span class="p-category">Face Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="FaceWash For Women" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy.html"class="popular-box-img">
+                    <img src="n3.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy.html">Nails</a>
+                    <span class="p-category">Nail Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Nails" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy (4).html"class="popular-box-img">
+                    <img src="n4.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (4).html">NailPolish Remover</a>
+                    <span class="p-category">Makeup Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="NailPolish Remover" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page.html"class="popular-box-img">
+                    <img src="n5.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page.html">Eye Lashes</a>
+                    <span class="p-category">Makeup Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Eye Lashes" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy (5).html"class="popular-box-img">
+                    <img src="n6.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (5).html">Nail Polish</a>
+                    <span class="p-category">Makeup Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Nail Polish" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy (6).html"class="popular-box-img">
+                    <img src="n7.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (6).html">Lipsticks</a>
+                    <span class="p-category">Makeup Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Lipsticks" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy (7).html"class="popular-box-img">
+                    <img src="n8.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (7).html">FaceWash For Women</a>
+                    <span class="p-category">Face Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="FaceWash For Women" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy (8).html"class="popular-box-img">
+                    <img src="n9.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (8).html">Cleanser</a>
+                    <span class="p-category">Face Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Cleanser" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy (9).html"class="popular-box-img">
+                    <img src="n10.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (9).html">Face Powder</a>
+                    <span class="p-category">Makeup Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Face Powder" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy (10).html"class="popular-box-img">
+                    <img src="n7.jfif" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy (10).html">Syrum</a>
+                    <span class="p-category">Face Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Syrum" data-price="25">Add to Cart</button>
+
+            </div>
+            <div class="popular-box">
+                <a href="product_page - Copy.html"class="popular-box-img">
+                    <img src="n3.png" alt="">
+                </a>
+                <div class="popular-box-text">
+                    <a href="product_page - Copy.html">Nails</a>
+                    <span class="p-category">Nail Products</span>
+                    <span class="p-price">10$ <del>15$</del></span>
+                </div>
+                <button class="add-to-cart" data-id="6" data-name="Nails" data-price="25">Add to Cart</button>
+
+            </div>
+        </div>
+    </section>
+    <div class="separation"></div>
+    <section class="product-grid-2">
+        <div class="product-grid-box product-grid-box2">
+            <img src="g2.jpg" alt="Beauty">
+            <div class="product-grid-text">
+                <strong>MakeUp Kit</strong>
+                <span>MakeUp Product</span>
+                <button class="add-to-cart" data-id="6" data-name="MakeUp Kit" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-grid-box product-grid-box3">
+            <img src="g1.jpg" alt="Beauty">
+            <div class="product-grid-text">
+                <strong>MakeUp Brushes</strong>
+                <span>MakeUp Product</span>
+                <button class="add-to-cart" data-id="6" data-name="MakeUp Brushes" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-company-box">
+                <a href="#" class="footer-logo">Logo</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit con</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-link-box">
+              <strong>Main Links</strong>
+              <ul>
+                <li><a href="#">Our Products</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </div>
+            <div class="footer-link-box">
+                <strong>Main Links</strong>
+                <ul>
+                  <li><a href="#">Our Products</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Disclaimer</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+              </div>
+              <div class="footer-link-box">
+                <strong>Main Links</strong>
+                <ul>
+                  <li><a href="#">Our Products</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Disclaimer</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+              </div>
+        </div>
+        <div class="separation"></div>
+        <div class="footer-bottom">
+            <span class="footer-owner">
+                Made By FizaMughal
+            </span>
+            <span class="copyright">
+                © Copyright-2025 fmughalishere
+            </span>
+        </div>
+    </footer>
+    <script src="jquery-3.6.1.js"></script>
+    <script>
+        var selector='.new-p-heading li';
+        $(selector).on('click', function(){
+            $(selector).removeClass('active')
+            $(this).addClass('active')
+        });
+        $(document).ready(function(){
+            $('.new-p-heading li').click(function(){
+                const value= $(this).attr('data-filter')
+                if (value=='all'){
+                    $('.new-product-box').show('1000');
+                }
+                else{
+                    $('.new-product-box').not('.'+value).hide('1000');
+                    $('.new-product-box').filter('.'+value).show('1000');
+                }
+            });
+        });
+        
+    </script>
+    
+    <script src="https://kit.fontawesome.com/d81f103a89.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="script 1.js"></script>
+    <script src="search.js"></script>
+    <script src="crt.js"></script>
+</body>
+</html>

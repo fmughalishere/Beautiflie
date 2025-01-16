@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="shortcut icon" href="dm-beauty-logo-06.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<style>
+#cart-items {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#cart-items h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+#cart-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cart-item-info {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+.cart-item-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.cart-item-info p {
+    margin: 5px 0;
+    color: #666;
+}
+#cart-total {
+    text-align: right;
+    font-size: 22px;
+    margin-top: 20px;
+}
+#cart-total strong {
+    color: #333;
+}
+#checkout-btn {
+    display: block;
+    width: 100%;
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+#checkout-btn:hover {
+    background-color: #ff4500;
+}
+    </style>
+<body>
+    <nav class="Beauty">
+        <img src="logo.png" alt="Beauty">
+    </nav>
+
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <img src="dm-beauty-logo-06.png" alt="Beauty App">
+        </a>
+        <div class="nav-btns">
+            <a href="login.html" class="nav-user">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="cart.html" class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i> <div id="cart">
+                    <span>:- </span><span id="cart-count">0</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <section id="cart-items">
+        <h2>Your Cart</h2>
+        <div id="cart-content">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div id="cart-total">
+            <strong>Total: $<span id="total-price">0</span></strong>
+        </div>
+        <a href="index.html" id="checkout-btn">Proceed to Checkout</a>
+    </section>
+      <script src="cart.js"></script>
+</body>
+</html>
